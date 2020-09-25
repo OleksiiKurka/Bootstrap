@@ -1,0 +1,38 @@
+body{
+    font-family: 'Kalam', cursive;
+}
+
+.height{
+    min-height: 100vh;;
+}
+
+.height-80{
+    min-height: 80vh;
+}
+
+.height-60{
+    min-height: 60vh;
+}
+
+.title-underline{
+    width: 200px;
+    height: 5px;
+    margin: 0 auto;
+}
+
+.about-picture{
+    background: url(../img/Pc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#BgSection,#ProgressSection{
+
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(../img/workplace.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
