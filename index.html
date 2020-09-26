@@ -19,6 +19,33 @@
 </head>
 
 <body>
+
+  <!-- navbar-->
+
+  <nav class="navbar py-3 navbar-light navbar-expand-sm bg-primary">
+    <!-- logo -->
+    <a href="#" class="navbar-brand text-uppercase font-weight-bold ">Oleksii web page</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarLinks">
+      <ul class="navbar-nav font-weight-bold">
+        <li class="nav-item active"><a href="#start" class="nav-link">Header</a> </li>
+        <li class="nav-item"><a href="#InfoSection" class="nav-link">Info</a> </li>
+        <li class="nav-item"><a href="#AboutSection" class="nav-link">About</a> </li>
+        <li class="nav-item"><a href="#PictureSection" class="nav-link">Picture</a> </li>
+        <li class="nav-item"><a href="#CardSection" class="nav-link">Card</a> </li>
+        <li class="nav-item"><a href="#CarouselSection" class="nav-link">Carousel</a> </li>
+        <li class="nav-item"><a href="#BgSection" class="nav-link">Bg</a> </li>
+        <li class="nav-item"><a href="#RegSection" class="nav-link">Reg</a> </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- end navbar-->
+
+
+
   <section id="start" class="bg-dark">
     <div class="container">
       <div class="row height align-items-center text-center">
@@ -51,10 +78,22 @@
 
         <!-- info -->
         <div class="col-md-6 col-lg-3  text-center my-4">
+          <i class="fab fa-html5 fa-4x text-danger"></i>
+          <h4 class="text-uppercase my-3">Html</h4>
+          <p class="text-muted">some info</p>
+          <button type="button" class="btn btn-outline-danger w-75  text-uppercase" data-toggle="modal"
+            data-target="#HTMLModel">press here</button>
+        </div>
+        <!-- end info -->
+
+
+        <!-- info -->
+        <div class="col-md-6 col-lg-3  text-center my-4">
           <i class="fab fa-bootstrap fa-4x text-danger"></i>
           <h4 class="text-uppercase my-3">Bootstrap</h4>
           <p class="text-muted">some info</p>
-          <a href="#" class="btn btn-outline-danger w-75  text-uppercase">press here</a>
+          <button type="button" class="btn btn-outline-danger w-75  text-uppercase" data-toggle="modal"
+            data-target="#BootstrapModel">press here</button>
         </div>
         <!-- end info -->
 
@@ -63,7 +102,8 @@
           <i class="fas fa-user-tie fa-4x text-danger"></i>
           <h4 class="text-uppercase my-3">Owner</h4>
           <p class="text-muted">some info</p>
-          <a href="#" class="btn btn-outline-danger w-75  text-uppercase">press here</a>
+          <button type="button" class="btn btn-outline-danger w-75  text-uppercase" data-toggle="modal"
+            data-target="#OwnerModel">press here</button>
         </div>
         <!-- end info -->
 
@@ -72,18 +112,12 @@
           <i class="fas fa-file-code fa-4x text-danger"></i>
           <h4 class="text-uppercase my-3">Code</h4>
           <p class="text-muted">some info</p>
-          <a href="#" class="btn btn-outline-danger w-75  text-uppercase">press here</a>
+          <button type="button" class="btn btn-outline-danger w-75  text-uppercase" data-toggle="modal"
+            data-target="#CodeModel">press here</button>
         </div>
         <!-- end info -->
 
-        <!-- info -->
-        <div class="col-md-6 col-lg-3  text-center my-4">
-          <i class="fab fa-html5 fa-4x text-danger"></i>
-          <h4 class="text-uppercase my-3">Bootstrap</h4>
-          <p class="text-muted">some info</p>
-          <a href="#" class="btn btn-outline-danger w-75  text-uppercase">press here</a>
-        </div>
-        <!-- end info -->
+
       </div>
     </div>
   </section>
@@ -100,34 +134,35 @@
         <!-- about tex col -->
         <div class="col-md-6 about-text d-flex align-items-center jestify-contex-center height-80 px-5">
           <!-- this is gor centering-->
-          <div class="about-text-center">
+          <div class="about-text-center mx-auto">
             <!-- title -->
             <div class="row">
               <div class="col text-center">
                 <h1 class="display-4 text-uppercase text-dark mb-0">
-                  <strong>Info</strong>
+                  <strong>About</strong>
                 </h1>
-                <div class="title-underline bg-warning" style="width: 100px;"></div>
-                <p class="mt-2 text-capitilise text-muted">This is short info about this web page</p>
+                <div class="title-underline bg-warning"></div>
+                <p class="mt-2 text-capitilise text-warning">Here will show the main goals that were achieved when
+                  creating the site</p>
               </div>
             </div>
             <!-- end title -->
             <!-- single item-->
             <div class="checkbox-item d-flex">
               <i class="fas fa-check fa-3x p-2 bg-warning mr-3 aling-self-center mb-1"></i>
-              <p class="text-light lead"> some text alot of text which dont have any</p>
+              <p class="text-light lead"> Githab was used as a hosting</p>
             </div>
             <!-- end single item-->
             <!-- single item-->
             <div class="checkbox-item d-flex">
               <i class="fas fa-check fa-3x p-2 bg-warning mr-3 aling-self-center mb-1"></i>
-              <p class="text-light lead"> some text</p>
+              <p class="text-light lead"> Studied bootstrap</p>
             </div>
             <!-- end single item-->
             <!-- single item-->
             <div class="checkbox-item d-flex">
               <i class="fas fa-check fa-3x p-2 bg-warning mr-3 aling-self-center mb-1"></i>
-              <p class="text-light lead"> some text</p>
+              <p class="text-light lead"> Most of the capabilities of this technology have been implemented</p>
             </div>
             <!-- end single item-->
           </div>
@@ -150,6 +185,7 @@
             <strong>Photo</strong>
           </h1>
           <div class="title-underline bg-danger"></div>
+          <p class="mt-2 text-capitilise text-light">The ability to upload photos is demonstrated here</p>
         </div>
       </div>
       <!-- end title -->
@@ -185,6 +221,7 @@
             <strong>Cards</strong>
           </h1>
           <div class="title-underline bg-warning"></div>
+          <p class="mt-2 text-capitilise text-dark">The ability of creating profile cards is demonstrated here</p>
         </div>
       </div>
       <!-- end title -->
@@ -268,6 +305,7 @@
             <strong>Carousel</strong>
           </h1>
           <div class="title-underline bg-warning"></div>
+          <p class="mt-2 text-capitilise text-warning">An interesting thing like a carousel is demonstrated here</p>
         </div>
       </div>
       <!-- end title -->
@@ -306,9 +344,11 @@
       <div class="row">
         <div class="col-md-6 mx-auto text-center">
           <h1 class="display-3 text-uppercase text-warning font-weight-bold">cool text on photo</h1>
-          <p class="lead text-white text-uppercase">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non enim
-            atque quae sequi
-            eos animi minima unde officia molestias minus.</p>
+          <p class="lead text-white text-uppercase">(random text) Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. In
+            sapiente repudiandae quia deleniti magni fugiat? Libero tenetur cum voluptate nostrum officiis quisquam
+            voluptates. Culpa illo vitae iusto omnis a quibusdam ipsa, tenetur inventore aliquam fugit nisi ex deleniti
+            praesentium quia ad animi voluptatem eaque cum, expedita fugiat incidunt impedit dolorem!</p>
         </div>
       </div>
     </div>
@@ -327,6 +367,8 @@
             <strong>contact</strong>
           </h1>
           <div class="title-underline bg-primary"></div>
+          <p class="mt-2 text-capitilise text-dark">The ability of realization of registration a profile is demonstrated
+          </p>
         </div>
       </div>
       <!-- end title -->
@@ -469,6 +511,111 @@
     </div>
   </footer>
 
+
+
+
+
+  <!-- model  -->
+  <div class="modal fade" id="OwnerModel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- modal header-->
+        <div class="modal-header">
+          <h3 class="modal-title">Owner</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="src/img/cake.jpg" alt="non responce">
+          <h3>This site was created by Oleksii</h3>
+        </div>
+        <!-- modal footer-->
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end model  -->
+
+
+
+  <!-- HTML model  -->
+  <div class="modal fade" id="HTMLModel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- modal header-->
+        <div class="modal-header">
+          <i class="fab fa-html5 fa-2x text-danger text-center"></i>
+          <h3 class="modal-title">HTML </h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+
+          <h3>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in
+            a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting
+            languages such as JavaScript.
+
+            Web browsers receive HTML documents from a web server or from local storage and render the documents into
+            multimedia web pages. HTML describes the structure of a web page semantically and originally included cues
+            for the appearance of the document.</h3>
+        </div>
+        <!-- modal footer-->
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end HTML model  -->
+
+  <!-- Bootstrap model  -->
+  <div class="modal fade" id="BootstrapModel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- modal header-->
+        <div class="modal-header">
+          <i class="fab fa-bootstrap fa-2x text-danger text-center"></i>
+          <h3 class="modal-title text-uppercase">bootstap </h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+
+          <h3>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web
+            development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms,
+            buttons, navigation, and other interface components.</h3>
+        </div>
+        <!-- modal footer-->
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end Bootstrap model  -->
+
+  <!-- Bootstrap model  -->
+  <div class="modal fade" id="CodeModel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- modal header-->
+        <div class="modal-header">
+          <i class="fas fa-file-code fa-2x text-danger text-center"></i>
+          <h3 class="modal-title text-uppercase">Code </h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+
+          <h3>Everything you see on the site was created out of boredom. And I just wanted to do something. Therefore, I
+            took as a basis a short course on bootstrap where I studied it and already managed to make such a site</h3>
+        </div>
+        <!-- modal footer-->
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-danger">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end Bootstrap model  -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
